@@ -17,6 +17,7 @@ namespace PestControl.Models
     {
         Pending,
         Approved,
+        disapprove
         
     }
 }

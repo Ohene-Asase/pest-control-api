@@ -49,7 +49,7 @@ namespace PestControl.Data
         {
             var res = await userManager.CreateAsync(new User
             {
-                UserName = "accounts@dinvoice.app",
+                UserName = "Admin",
                 PhoneNumber = "0000000000",
                 Name = "Administrator",
                 Email = "accounts@dinvoice.app",

@@ -20,11 +20,17 @@ namespace PestControl.Controllers
             catch (Exception ex) { return BadRequest(ExceptionHelper.ProcessException(ex)); }
         }
 
+        [HttpGet, Route("disapproval")]
+        public async Task<IActionResult> disapproval(long id)
+        {
+            try { return Ok(await Service.disApprove(id)); }
+            catch (Exception ex) { return BadRequest(ExceptionHelper.ProcessException(ex)); }
+        }
 
 
 
 
 
     }
- }
+}
 
